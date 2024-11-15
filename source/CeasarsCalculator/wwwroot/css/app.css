@@ -112,3 +112,42 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.content {
+    margin: auto;
+    width: 25%;
+}
+
+.calc-wrapper {
+    background-color: lightblue;
+}
+
+.calc-output {
+    background-color: lightcoral;
+    width: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+.calc-keypad {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(3, 50px);
+    background-color: lightgreen;
+    width: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.calc-numberkey {
+    text-align: center;
+}
+
+.calc-optionkey {
+    font-weight: bold;
+}

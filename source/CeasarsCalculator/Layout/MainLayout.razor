@@ -1,16 +1,25 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+<div style="height: 500px;">
+    <FluentLayout>
+        <!-- Header -->
+        <FluentHeader>
+            <FluentLabel Typo="Typography.PageTitle" Color="@Color.Warning"> Cäsars Taschenrechner</FluentLabel>
+        </FluentHeader>
+
+        <!-- Main content -->
+        <FluentBodyContent Class="body-content">
+            <div class="content">
+                @Body
+            </div>
+        </FluentBodyContent>
+
+        <!-- Footer -->
+        <FluentFooter>
+            <a href="https://www.fluentui-blazor.net" target="_blank">Documentation and demos</a>
+            <FluentSpacer></FluentSpacer>
+            <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor" target="_blank">About Blazor</a>
+        </FluentFooter>
+    </FluentLayout>
 </div>
